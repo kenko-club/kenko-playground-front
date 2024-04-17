@@ -60,3 +60,31 @@ You then have the `pages` folder, which contains components that must only:
 
 1. In the next step, we will create a pull request. How can we do that ? Checkout the branch `step/3` to get the next steps.
 
+   1. `git checkout -b your-name/admin-pannel-template`
+   1. `git push`
+   1. Publish pull request.
+
+1. Let's simplify our `UserList` component. The page title should not be in the `UserList` component. Let's create a `PageTitle` component:
+
+   1. Create the PageTitle component.
+
+      _Reminder: to create a component, you need to export a function with the same name of the `.tsx` file. In this case, the PageTitle.tsx should contain:_
+
+   ```ts
+   export function PageTitle() {
+     //...
+   }
+   ```
+
+   2. Add the text of the title as a property.
+         <!-- Help needed -->
+
+      Description typescript prop
+
+   3. Add `PageTitle` to `AdminPanelTemplate`.
+
+1. Using tailwind CSS, make some space bellow and above the `PageTitle` component.
+
+   _Tailwind has preconfigured classes for styles. Just add a class to the right `className` in your `PageTitle` component._
+
+1. The data contained in the `people` object of `UserList` should not be there. In a real life application, this list would be fetched from an API.
